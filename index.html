@@ -265,7 +265,7 @@
   <!-- Header (Home) -->
   <header id="home" class="min-h-screen w-full flex flex-col md:flex-row items-center justify-center gap-2 px-1 md:px-1" role="banner">
     <div class="mx-auto">
-      <img src="src/DSC_3837.JPG" alt="Anil Kumar Raigar" class="profile-img w-80 h-80 md:w-96 md:h-96 object-cover rounded-3xl border-4 border-gray-200 shadow-lg">
+      <img src="src/DSC_3837.JPG" alt="Anil Kumar Raigar" class="profile-img w-80 h-80 md:w-96 md:h-96 object-cover rounded-3xl border-4 border-gray-200 shadow-lg hover-img">
     </div>
     <div class="text-center md:text-left max-w-lg">
       <h1 class="text-3xl md:text-5xl font-bold mb-3">Anil Kumar Raigar</h1>
@@ -275,17 +275,17 @@
       <p class="text-base md:text-lg text-gray-500 mb-6">Liverpool, England, United Kingdom</p>
       <a href="#contact" class="cta-button">Connect with Me</a>
     </div>
-  </header>
+</header>
 
   <!-- About Me Section -->
   <section id="about" class="w-full flex items-center px-5 md:px-10" role="region" aria-labelledby="about-heading">
     <div class="w-full text-center">
       <h2 id="about-heading" class="text-3xl md:text-4xl font-bold mb-6">About Me (He/Him)</h2>
-      <p class="text-base md:text-lg leading-relaxed text-justify list-item">
-        I’m a dedicated Data Analyst with over <strong>3 years of experience</strong>, passionate about transforming data into actionable insights to drive business growth. I hold an MSc in Advanced Data Science (Distinction) from Bangor University, complemented by a Bachelor’s in Electrical Engineering. My expertise spans Python, SQL, Power BI, Pandas, and NumPy, with a focus on forecasting, data visualization, and business optimization. At Vikir India, I analyzed 150K+ service requests, reduced response times by 15% through Power BI dashboards, and automated reporting to save 20% of weekly time. I’ve also worked at Digital Masters India and managed operations at Himanshu Iron Workshop, where I enhanced customer satisfaction and business efficiency. Based in Liverpool, England (originally from Bryn Eithin, Bangor, UK), I enjoy wooden engineering, music, and spending time with friends in my free time. Let’s connect to explore how I can help your organization succeed through data-driven strategies.
+      <p class="text-base md:text-lg leading-relaxed text-justify">
+        I’m a dedicated <span style="color: #1E90FF;">Data Analyst</span> with over <strong>3 years of experience</strong>, passionate about transforming data into actionable insights to drive business growth. I hold an MSc in Advanced Data Science (Distinction) from Bangor University, complemented by a Bachelor’s in Electrical Engineering. My expertise spans <span style="color: #1E90FF;">Python</span>, <span style="color: #1E90FF;">SQL</span>, <span style="color: #1E90FF;">Power BI</span>, <span style="color: #1E90FF;">Pandas</span>, and <span style="color: #1E90FF;">NumPy</span>, with a focus on <span style="color: #1E90FF;">forecasting</span>, <span style="color: #1E90FF;">data visualization</span>, and <span style="color: #1E90FF;">business optimization</span>. At Vikir India, I <span style="color: #1E90FF;">analyzed</span> 150K+ service requests, reduced response times by 15% through Power BI dashboards, and <span style="color: #1E90FF;">automated reporting</span> to save 20% of weekly time. I’ve also worked at Digital Masters India and managed operations at Himanshu Iron Workshop, where I enhanced customer satisfaction and business efficiency. Based in Liverpool, England (originally from Bryn Eithin, Bangor, UK), I enjoy wooden engineering, music, and spending time with friends in my free time. Let’s connect to explore how I can help your organization succeed through data-driven strategies.
       </p>
     </div>
-  </section>
+</section>
 
   <!-- Relevant Experience Section -->
   <section id="experience" class="w-full flex items-center justify-center px-5 md:px-10 py-12" role="region" aria-labelledby="experience-heading">
@@ -471,5 +471,17 @@
       });
     });
   </script>
+<style>
+  .hover-img {
+    display: block; /* Ensures consistent transform behavior */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+
+  .hover-img:hover {
+    transform: scale(1.0125); /* Enlarges ~4px (e.g., 320px to 324px, 384px to ~388px) */
+  }
+</style>
+</style>
+  </style>
 </body>
 </html>
