@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Anil Kumar Raigar, Data Analyst with 3+ years experience in Python, SQL, and Power BI.">
-  <meta name="keywords" content="data analyst, portfolio, Python, SQL, Power BI, data science, forecasting, data visualization, business optimization">
+  <meta name="description"
+    content="Portfolio of Anil Kumar Raigar, Data Analyst with 3+ years experience in Python, SQL, and Power BI.">
+  <meta name="keywords"
+    content="data analyst, portfolio, Python, SQL, Power BI, data science, forecasting, data visualization, business optimization">
   <title>Anil Kumar Raigar - Data Analyst Portfolio</title>
   <link rel="icon" type="png" href="src/icon.png" sizes="64x64">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -13,20 +16,30 @@
     /* Custom font and animated background */
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(45deg, #f5f0e1, #d9e4f5, #e6d9c6, #f5e6e1,#b3cde0, #f4e4bc, #d1d5f0, #a1c4fd, #f7d9e3, #c2e0c6);
+      background: linear-gradient(45deg, #f5f0e1, #d9e4f5, #e6d9c6, #f5e6e1, #b3cde0, #f4e4bc, #d1d5f0, #a1c4fd, #f7d9e3, #c2e0c6);
       background-size: 400% 400%;
       animation: gradientAnimation 12s ease infinite;
       min-height: 100vh;
     }
 
     @keyframes gradientAnimation {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     /* Section styling with hover animation */
-    section, header, footer {
+    section,
+    header,
+    footer {
       background: rgba(255, 255, 255, 0.95);
       border-radius: 1rem;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -38,7 +51,8 @@
       transform: translateY(30px);
     }
 
-    section:hover, header:hover {
+    section:hover,
+    header:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     }
@@ -46,7 +60,8 @@
     /* Footer specific styling */
     footer {
       background: rgba(255, 255, 255, 0.95);
-      color: #1f2937; /* Changed from white to dark gray for visibility */
+      color: #1f2937;
+      /* Changed from white to dark gray for visibility */
       position: relative;
       overflow: hidden;
     }
@@ -66,31 +81,50 @@
     }
 
     @keyframes footerPulse {
-      0% { opacity: 0; transform: scale(0.5); }
-      50% { opacity: 0.3; transform: scale(1); }
-      100% { opacity: 0; transform: scale(1.5); }
+      0% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+
+      50% {
+        opacity: 0.3;
+        transform: scale(1);
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(1.5);
+      }
     }
 
     /* Scroll-triggered fade-in */
-    section.visible, header.visible, footer.visible {
+    section.visible,
+    header.visible,
+    footer.visible {
       opacity: 1;
       transform: translateY(0);
       animation: fadeIn 0.6s ease forwards;
     }
 
     @keyframes fadeIn {
-      to { opacity: 1; transform: translateY(0); }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* Navigation enhancements */
     nav {
-      background: transparent; /* Changed to transparent */
-      backdrop-filter: blur(8px); /* Subtler blur */
+      background: transparent;
+      /* Changed to transparent */
+      backdrop-filter: blur(8px);
+      /* Subtler blur */
       transition: background 0.3s ease;
     }
 
     nav a {
-      color: rgb(1, 1, 1); /* Added for visibility */
+      color: rgb(1, 1, 1);
+      /* Added for visibility */
       transition: color 0.3s ease, transform 0.2s ease;
     }
 
@@ -108,6 +142,7 @@
       .nav-links {
         display: none;
       }
+
       .nav-links.active {
         display: flex;
         flex-direction: column;
@@ -115,27 +150,34 @@
         top: 60px;
         left: 0;
         right: 0;
-        background: rgba(31, 41, 55, 0.9); /* Semi-opaque for mobile */
+        background: rgba(31, 41, 55, 0.9);
+        /* Semi-opaque for mobile */
         backdrop-filter: blur(8px);
         padding: 1rem;
       }
+
       #mobile-menu {
         display: block;
       }
+
       footer {
         text-align: center;
       }
+
       footer .flex {
         justify-content: center;
       }
     }
 
     /* Typography */
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
       color: #1f2937;
     }
 
-    p, li {
+    p,
+    li {
       color: #4b5563;
       line-height: 1.8;
     }
@@ -147,7 +189,9 @@
     }
 
     @keyframes zoomIn {
-      to { transform: scale(1); }
+      to {
+        transform: scale(1);
+      }
     }
 
     /* Staggered fade-in for list items */
@@ -157,13 +201,27 @@
       animation: fadeInItem 0.5s ease forwards;
     }
 
-    .list-item:nth-child(1) { animation-delay: 0.1s; }
-    .list-item:nth-child(2) { animation-delay: 0.2s; }
-    .list-item:nth-child(3) { animation-delay: 0.3s; }
-    .list-item:nth-child(4) { animation-delay: 0.4s; }
+    .list-item:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .list-item:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .list-item:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .list-item:nth-child(4) {
+      animation-delay: 0.4s;
+    }
 
     @keyframes fadeInItem {
-      to { opacity: 1; transform: translateY(0); }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* Button pulse effect */
@@ -183,9 +241,17 @@
     }
 
     @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
-      70% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 99, 255, 0); }
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 99, 255, 0);
+      }
     }
 
     /* Social icons bounce and color transition */
@@ -202,7 +268,8 @@
     .contact-link {
       position: relative;
       transition: color 0.3s ease;
-      color: #2563eb; /* Added for visibility against white footer */
+      color: #2563eb;
+      /* Added for visibility against white footer */
     }
 
     .contact-link::after {
@@ -242,6 +309,7 @@
     }
   </style>
 </head>
+
 <body class="pt-16">
   <!-- Navigation Bar -->
   <nav class="p-2 px-2 fixed top-0 w-full z-10" role="navigation" aria-label="Main navigation">
@@ -264,84 +332,164 @@
   </nav>
 
   <!-- Header (Home) -->
-  <header id="home" class="min-h-screen w-full flex flex-col md:flex-row items-center justify-center gap-2 px-1 md:px-1" role="banner">
+  <header id="home" class="min-h-screen w-full flex flex-col md:flex-row items-center justify-center gap-2 px-1 md:px-1"
+    role="banner">
     <div class="mx-auto">
-      <img src="src/DSC_3837.JPG" alt="Anil Kumar Raigar" class="profile-img w-80 h-80 md:w-96 md:h-96 object-cover rounded-3xl border-4 border-gray-200 shadow-lg hover-img">
+      <img src="src/DSC_3837.JPG" alt="Anil Kumar Raigar"
+        class="profile-img w-80 h-80 md:w-96 md:h-96 object-cover rounded-3xl border-4 border-gray-200 shadow-lg hover-img">
     </div>
     <div class="text-center md:text-left max-w-lg">
       <h1 class="text-3xl md:text-5xl font-bold mb-3">Anil Kumar Raigar</h1>
       <p class="text-lg md:text-xl leading-relaxed mb-4">
-        Data Analyst | MSc Advanced Data Science (Distinction) | Python • SQL • Power BI | 3+ Years' Experience
+        Data Analyst | MSc Advanced Data Science (Distinction) | Python • SQL • Power BI | 4+ Years' Experience
       </p>
       <p class="text-base md:text-lg text-gray-500 mb-6">Liverpool, England, United Kingdom</p>
       <a href="#contact" class="cta-button">Connect with Me</a>
     </div>
-</header>
+  </header>
 
   <!-- About Me Section -->
   <section id="about" class="w-full flex items-center px-5 md:px-10" role="region" aria-labelledby="about-heading">
     <div class="w-full text-center">
       <h2 id="about-heading" class="text-3xl md:text-4xl font-bold mb-6">About Me (He/Him)</h2>
       <p class="text-base md:text-lg leading-relaxed text-justify">
-        I’m a dedicated <span style="color: #1E90FF;">Data Analyst</span> with over <strong>3 years of experience</strong>, passionate about transforming data into actionable insights to drive business growth. I hold an MSc in Advanced Data Science (Distinction) from Bangor University, complemented by a Bachelor’s in Electrical Engineering. My expertise spans <span style="color: #1E90FF;">Python</span>, <span style="color: #1E90FF;">SQL</span>, <span style="color: #1E90FF;">Power BI</span>, <span style="color: #1E90FF;">Pandas</span>, and <span style="color: #1E90FF;">NumPy</span>, with a focus on <span style="color: #1E90FF;">forecasting</span>, <span style="color: #1E90FF;">data visualization</span>, and <span style="color: #1E90FF;">business optimization</span>. At Vikir India, I <span style="color: #1E90FF;">analyzed</span> 150K+ service requests, reduced response times by 15% through Power BI dashboards, and <span style="color: #1E90FF;">automated reporting</span> to save 20% of weekly time. I’ve also worked at Digital Masters India and managed operations at Himanshu Iron Workshop, where I enhanced customer satisfaction and business efficiency. Based in Liverpool, England (originally from Bryn Eithin, Bangor, UK), I enjoy wooden engineering, music, and spending time with friends in my free time. Let’s connect to explore how I can help your organization succeed through data-driven strategies.
-      </p>
-    </div>
-</section>
 
-  <!-- Relevant Experience Section -->
-  <section id="experience" class="w-full flex items-center justify-center px-5 md:px-10 py-12" role="region" aria-labelledby="experience-heading">
-    <div class="w-full text-center">
-      <h2 id="experience-heading" class="text-3xl md:text-4xl font-bold mb-6">Relevant Experience</h2>
-      <div class="space-y-8 text-left">
-        <div class="list-item">
-          <h3 class="text-xl md:text-2xl font-semibold">Data Analyst (April 2021 - August 2023)</h3>
-          <p class="text-base md:text-lg italic mt-2">Vikir India</p>
-          <p class="text-base md:text-lg leading-relaxed">
-            Spearheaded data-driven initiatives across 50+ cities, analyzing 150,000+ service requests. Reduced response times by 15% with Power BI dashboards and automated reporting with Python, saving 20% of weekly time.
-          </p>
-        </div>
-        <div class="list-item">
-          <h3 class="text-xl md:text-2xl font-semibold">Data Analyst (December 2020 - March 2021)</h3>
-          <p class="text-base md:text-lg italic mt-2">Digital Masters India</p>
-          <p class="text-base md:text-lg leading-relaxed">
-            Designed Power BI dashboards and cleaned datasets with Python and SQL, supporting strategic decisions during internship.
-          </p>
-        </div>
-        <div class="list-item">
-          <h3 class="text-xl md:text-2xl font-semibold">Data Analyst / Operations Manager (August 2019 - October 2020)</h3>
-          <p class="text-base md:text-lg italic mt-2">Himanshu Iron Workshop</p>
-          <p class="text-base md:text-lg leading-relaxed">
-            Implemented Excel-based tracking systems, optimized workflows, and expanded market reach through partnerships.
-          </p>
-        </div>
-      </div>
+        👨‍💻 As a <span style="color: #1E90FF;"><strong>Data Analyst with 4+ Experience</strong></span> at <strong>Pure
+          Software</strong> and formerly a <strong>Data Research Analyst</strong> at <strong>Vikir Pvt Ltd</strong>,
+        I’ve delivered analytics solutions to international clients in <span style="color: #1E90FF;">fintech</span>,
+        <span style="color: #1E90FF;">banking</span>, <span style="color: #1E90FF;">retail</span>, and <span
+          style="color: #1E90FF;">logistics</span> sectors 🚀, achieving a <strong>30% increase in user
+          engagement</strong> through <span style="color: #1E90FF;">predictive models</span> and a <strong>25% reduction
+          in report turnaround time</strong> via <span style="color: #1E90FF;">automated dashboards</span> 📊. I hold an
+        <strong>MSc in Advanced Data Science (Distinction)</strong> from <strong>Bangor University</strong> 🎓, with
+        expertise in <span style="color: #1E90FF;">machine learning</span>, <span style="color: #1E90FF;">natural
+          language processing</span>, and <span style="color: #1E90FF;">information visualization</span>, scoring
+        <strong>80%</strong> on my dissertation focused on <span style="color: #1E90FF;">EDFA Gain Modelling</span>
+        using <span style="color: #1E90FF;">Deep Neural Networks</span> 🤖. I am proficient in <span
+          style="color: #1E90FF;">Python</span> (<span style="color: #1E90FF;">Pandas</span>, <span
+          style="color: #1E90FF;">NumPy</span>, <span style="color: #1E90FF;">Dash</span>, <span
+          style="color: #1E90FF;">scikit-learn</span>) 🐍, <span style="color: #1E90FF;">SQL</span> 🧮, and <span
+          style="color: #1E90FF;">Power BI</span> 📈, excelling at <span style="color: #1E90FF;">interactive dashboard
+          development</span>, <span style="color: #1E90FF;">predictive modeling</span>, and <span
+          style="color: #1E90FF;">stakeholder engagement</span>. Inspired by my roots in <strong>rural
+          Rajasthan</strong> 🌾 and now based in <strong>Liverpool, UK</strong> 🇬🇧, I’m seeking opportunities as a
+        <strong>Data Analyst</strong>, <strong>Business Intelligence Analyst</strong>, <strong>Forecasting
+          Analyst</strong>, or <strong>Operations Analyst</strong> in <span style="color: #1E90FF;">technology</span>,
+        <span style="color: #1E90FF;">retail</span>, or <span style="color: #1E90FF;">logistics</span>—to craft
+        impactful, <span style="color: #1E90FF;">data-driven outcomes</span> 💼.
+      </p>
     </div>
   </section>
 
+  <!-- Relevant Experience Section -->
+  <section id="experience" class="w-full flex items-center justify-center px-5 md:px-10 py-12" role="region"
+    aria-labelledby="experience-heading">
+    <div class="w-full text-center">
+      <h2 id="experience-heading" class="text-3xl md:text-4xl font-bold mb-6">Relevant Experience</h2>
+      <div class="space-y-8 text-left">
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold">📊 Data Analyst (March 2023 – Present)</h3>
+          <p class="text-base md:text-lg italic mt-2">Pure Software : India</p>
+          <ul class="list-disc text-base md:text-lg leading-relaxed pl-5">
+            <li>⚙️ Developed <span style="color: #1E90FF;">predictive models</span> using <strong>Python
+                (scikit-learn)</strong> for <span style="color: #1E90FF;">fintech</span> and <span
+                style="color: #1E90FF;">banking</span> clients, driving a <strong>30% increase in user
+                engagement</strong>.</li>
+            <li>📈 Built and deployed interactive <strong>dashboards</strong> with <strong>Dash</strong> and
+              <strong>Power BI</strong>, cutting report turnaround time by <strong>25%</strong> and improving <span
+                style="color: #1E90FF;">stakeholder data accessibility</span>.</li>
+            <li>🔄 Automated <strong>reporting pipelines</strong> using <strong>Python</strong> and
+              <strong>SQL</strong>, streamlining workflows across international operations.</li>
+            <li>🤝 Collaborated with <strong>cross-functional teams</strong> to translate data insights into <span
+                style="color: #1E90FF;">strategic business decisions</span> in fintech and retail sectors.</li>
+            <li>🎓 Led training for <strong>50+ team members</strong>, creating support guides to encourage adoption of
+              <span style="color: #1E90FF;">analytics tools</span>.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold">📊 Data Research Analyst (April 2021 – March 2023)</h3>
+          <p class="text-base md:text-lg italic mt-2">Vikir Pvt Ltd : India</p>
+          <ul class="list-disc text-base md:text-lg leading-relaxed pl-5">
+            <li>🔍 Analyzed over <strong>150,000 service records</strong> to uncover patterns in issue types, technician
+              response rates, and regional demand optimizing <span style="color:#1E90FF;">resource allocation</span>
+              across <strong>50+ cities</strong>.</li>
+            <li>📊 Designed dynamic <span style="color:#1E90FF;">SQL-based dashboards</span> to monitor KPIs like
+              <strong>resolution time</strong>, <strong>first-time fix rate</strong>, and <strong>technician
+                availability</strong>, improving operational responsiveness by <strong>15%</strong>.</li>
+            <li>🔁 Automated recurring performance reports using <strong>Python</strong>, cutting manual workload and
+              saving <strong>20%</strong> of reporting time for operations leads.</li>
+            <li>🧹 Cleaned, structured, and validated raw datasets using <strong>Pandas</strong> and
+              <strong>NumPy</strong>, enhancing data integrity and supporting a <strong>12% rise in customer
+                retention</strong>.</li>
+            <li>🧭 Presented <span style="color:#1E90FF;">strategic insights</span> to stakeholders, influencing key
+              decisions in technician training, pricing strategy, and emergency dispatch logistics.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold">📊 Data Analyst - Intern (December 2020 – March 2021)</h3>
+          <p class="text-base md:text-lg italic mt-2">Digital Masters : India</p>
+          <ul class="list-disc text-base md:text-lg leading-relaxed pl-5">
+            <li>🐍 Mastered <span style="color:#1E90FF;">Python</span>, <span style="color:#1E90FF;">SQL</span>, and
+              <span style="color:#1E90FF;">Power BI</span>, applying <span style="color:#1E90FF;">data cleaning</span>,
+              <span style="color:#1E90FF;">preprocessing</span>, and <span style="color:#1E90FF;">feature
+                engineering</span> for high-quality analytics datasets.</li>
+            <li>📈 Created interactive <strong>Power BI dashboards</strong> to visualize business metrics and enable
+              <span style="color:#1E90FF;">data-driven decision-making</span> for stakeholders.</li>
+            <li>📊 Extracted and analyzed data for team projects, delivering <span style="color:#1E90FF;">actionable
+                insights</span> that supported strategic business initiatives.</li>
+            <li>🤝 Strengthened <span style="color:#1E90FF;">collaboration and presentation skills</span> by
+              coordinating tasks and communicating findings clearly to stakeholders.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold">🛠️ Operations & Data Assistant (August 2019 – October 2020)
+          </h3>
+          <p class="text-base md:text-lg italic mt-2">Himanshu Iron Workshop, Rajasthan, India</p>
+          <ul class="list-disc text-base md:text-lg leading-relaxed pl-5">
+            <li>📦 Managed day-to-day operations including <span style="color:#1E90FF;">stock</span>, <span
+                style="color:#1E90FF;">sales</span>, <span style="color:#1E90FF;">production workflow</span>, and <span
+                style="color:#1E90FF;">logistics</span>, driving process optimization and improved efficiency.</li>
+            <li>📊 Used <strong>Excel</strong> to track <span style="color:#1E90FF;">sales</span>, monitor <span
+                style="color:#1E90FF;">inventory</span>, and forecast <span style="color:#1E90FF;">raw material
+                requirements</span>—ensuring seamless operational continuity.</li>
+            <li>💬 Gathered <strong>customer feedback</strong> and implemented process enhancements, leading to
+              increased <span style="color:#1E90FF;">customer satisfaction</span> and repeat business.</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
   <!-- Education & Skills Section -->
-  <section id="education" class="w-full flex items-center justify-center px-5 md:px-10 py-12" role="region" aria-labelledby="education-heading">
+  <section id="education" class="w-full flex items-center justify-center px-5 md:px-10 py-12" role="region"
+    aria-labelledby="education-heading">
     <div class="w-full text-center">
       <h2 id="education-heading" class="text-3xl md:text-4xl font-bold mb-6">Education & Skills</h2>
       <div class="space-y-8 text-left">
         <div class="list-item">
           <h3 class="text-xl md:text-2xl font-semibold">MSc Advanced Data Science (2024)</h3>
           <p class="text-base md:text-lg italic mt-2">Bangor University</p>
-          <p class="text-base md:text-lg leading-relaxed">Outstanding Master’s Thesis Award.</p>
+          <p class="text-base md:text-lg leading-relaxed">Natural Language Processing, Advanced Research Methods, Individual Research Project, Information Visualization, Data Science, High Performance Computing, Machine Learning.</p>
         </div>
         <div class="list-item">
-          <h3 class="text-xl md:text-2xl font-semibold">BEng Electrical Engineering (2019)</h3>
-          <p class="text-base md:text-lg italic mt-2">Sobhasaria Engineering College Sikar</p>
+          <h3 class="text-xl md:text-2xl font-semibold">B. Tech. in Electrical Engineering (2019)</h3>
+          <p class="text-base md:text-lg italic mt-2">Sobhasaria Engineering College India</p>
         </div>
-        <div class="list-item">
-          <h3 class="text-xl md:text-2xl font-semibold">Skills</h3>
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold">Core Skills</h3>
           <ul class="text-base md:text-lg leading-relaxed list-disc pl-5 mt-2">
-            <li class="list-item">Python (Pandas, NumPy, Scikit-learn)</li>
-            <li class="list-item">SQL (Complex Queries)</li>
-            <li class="list-item">Power BI (Dashboards)</li>
-            <li class="list-item">Forecasting & Modeling</li>
-            <li class="list-item">Data Cleaning & Preprocessing</li>
-            <li class="list-item">Excel (Advanced)</li>
-            <li class="list-item">Collaboration & Communication</li>
+            <li class="list-item">📊 Data Interpretation & Statistical Analysis</li>
+            <li class="list-item">📈 Data Visualization (Power BI, Dash, Excel Charts)</li>
+            <li class="list-item">🧮 Advanced Excel (Formulas, Pivot Tables, VLOOKUP, Macros)</li>
+            <li class="list-item">🧾 SQL (SELECT, WHERE, JOIN) for Data Extraction & Manipulation</li>
+            <li class="list-item">🐍 Python (Pandas, NumPy, scikit-learn, Dash) for Analysis & Automation</li>
+            <li class="list-item">🧹 Data Collection, Cleaning & Organization</li>
+            <li class="list-item">🔄 Workflow & Data Pipeline Automation</li>
+            <li class="list-item">📉 Trend Identification & Statistical Analysis</li>
+            <li class="list-item">🤖 Predictive Modeling & Machine Learning</li>
+            <li class="list-item">📊 Dashboard Development & Reporting</li>
+            <li class="list-item">🤝 Collaboration with Engineering Teams & Ad Hoc Project Support</li>
+            <li class="list-item">🧠 Analytical Mindset & Strong Attention to Detail</li>
+            <li class="list-item">🌐 Independent & Remote Work Proficiency</li>
           </ul>
         </div>
       </div>
@@ -349,34 +497,90 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="w-full flex items-center justify-center px-5 md:px-10 py-12" role="region" aria-labelledby="projects-heading">
+  <section id="projects" class="w-full flex items-center justify-center px-5 md:px-10 py-12" role="region"
+    aria-labelledby="projects-heading">
     <div class="w-full text-center">
       <h2 id="projects-heading" class="text-3xl md:text-4xl font-bold mb-6">Projects</h2>
       <div class="space-y-8 text-left">
-        <div class="list-item">
-          <h3 class="text-xl md:text-2xl font-semibold">Service Request Analysis Dashboard</h3>
-          <p class="text-base md:text-lg leading-relaxed">Power BI dashboard for 150,000+ requests, reducing response times by 15%. <a href="https://github.com/anilkrp/service-request-dashboard" class="text-blue-600 hover:underline">GitHub</a></p>
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold">📈✨ User Engagement Prediction Model</h3>
+          <p class="text-base md:text-lg leading-relaxed">📊 Predictive model built using <strong><span
+                style="color:#1E90FF;">Python (scikit-learn)</span></strong>, increasing fintech client engagement by
+            30%. <a href="https://github.com/anilkpr/user-engagement-prediction"
+              class="text-blue-600 hover:underline">🔗 GitHub</a></p>
+          <ul class="list-disc text-base md:text-lg leading-relaxed pl-5">
+            <li>🤖 Built a predictive model using <strong>Python (scikit-learn)</strong> to estimate user engagement
+              based on transaction and behavioral data.</li>
+            <li>🎯 Enabled personalized marketing campaigns, resulting in a 30% increase in user engagement.</li>
+            <li>🧹 Cleaned and preprocessed datasets using <strong>Pandas</strong> and <strong>NumPy</strong> to ensure
+              high-quality inputs.</li>
+            <li>📢 Presented model insights to stakeholders to support product optimization and retention strategies.
+            </li>
+          </ul>
         </div>
-        <div class="list-item">
-          <h3 class="text-xl md:text-2xl font-semibold">Customer Retention Prediction Model</h3>
-          <p class="text-base md:text-lg leading-relaxed">Scikit-learn model improving retention by 12%. <a href="https://github.com/anilkrp/customer-retention-model" class="text-blue-600 hover:underline">GitHub</a></p>
+
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold">📊⚡ Automated Reporting Dashboard (Pure Software, 2023 –
+            Present)</h3>
+          <p class="text-base md:text-lg leading-relaxed">📈 Dashboard system built with <strong><span
+                style="color:#1E90FF;">Dash</span></strong> and <strong><span style="color:#1E90FF;">Power
+                BI</span></strong>, reducing turnaround time by 25%. <a
+              href="https://github.com/anilkpr/automated-reporting-dashboard" class="text-blue-600 hover:underline">🔗
+              GitHub</a></p>
+          <ul class="list-disc text-base md:text-lg leading-relaxed pl-5">
+            <li>🖥️ Designed an interactive dashboard using <strong>Dash</strong> and <strong>Power BI</strong> for
+              banking clients.</li>
+            <li>🔗 Connected dashboard to live databases with <strong>SQL</strong> queries for real-time reporting.</li>
+            <li>📊 Visualized KPIs like transaction volume, risk exposure, and customer churn.</li>
+            <li>🔄 Automated reporting workflows to save time and improve data accessibility.</li>
+          </ul>
         </div>
-        <div class="list-item">
-          <h3 class="text-xl md:text-2xl font-semibold">Automated Reporting System</h3>
-          <p class="text-base md:text-lg leading-relaxed">Python-based system saving 20% weekly time. <a href="https://github.com/anilkrp/automated-reporting" class="text-blue-600 hover:underline">GitHub</a></p>
+
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold">🛠️🔧 Predictive Technician Allocation Model (Vikir Pvt Ltd,
+            2022)</h3>
+          <p class="text-base md:text-lg leading-relaxed">🚚 Dispatch optimization model using <strong><span
+                style="color:#1E90FF;">Python</span></strong> and <strong><span
+                style="color:#1E90FF;">SQL</span></strong>, improving service accuracy. <a
+              href="https://github.com/anilkpr/technician-allocation-model" class="text-blue-600 hover:underline">🔗
+              GitHub</a></p>
+          <ul class="list-disc text-base md:text-lg leading-relaxed pl-5">
+            <li>📈 Developed a classification model to estimate service success probability using
+              <strong>scikit-learn</strong>.</li>
+            <li>⚡ Integrated model into dispatch system, reducing technician mismatches by 22%.</li>
+            <li>🧹 Cleaned and structured service data with <strong>Pandas</strong> and <strong>NumPy</strong>; queried
+              using <strong>SQL</strong>.</li>
+            <li>🏆 Boosted first-attempt resolutions in Tier 1 cities, enhancing customer satisfaction.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold">📡🧠 EDFA Gain Modelling using Deep Neural Networks (Bangor
+            University, 2024)</h3>
+          <p class="text-base md:text-lg leading-relaxed">🎓 MSc dissertation scoring 80%, exploring deep learning
+            applications in optical fiber technology. <a href="https://github.com/anilkpr/edfa-gain-modelling"
+              class="text-blue-600 hover:underline">🔗 GitHub</a></p>
+          <ul class="list-disc text-base md:text-lg leading-relaxed pl-5">
+            <li>🧠 Designed and trained a deep neural network model for predicting EDFA gain.</li>
+            <li>🧼 Conducted data preprocessing and feature engineering with <strong>Pandas</strong> and
+              <strong>NumPy</strong>.</li>
+            <li>🔍 Applied advanced machine learning techniques to improve accuracy and reliability.</li>
+            <li>📢 Presented results demonstrating real-world telecom applications of neural networks.</li>
+          </ul>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- Certifications Section -->
-  <section id="certifications" class="w-full flex items-center justify-center px-5 md:px-10 py-12" role="region" aria-labelledby="certifications-heading">
+  <section id="certifications" class="w-full flex items-center justify-center px-5 md:px-10 py-12" role="region"
+    aria-labelledby="certifications-heading">
     <div class="w-full text-center">
       <h2 id="certifications-heading" class="text-3xl md:text-4xl font-bold mb-6">Certifications</h2>
       <div class="space-y-8 text-left">
         <div class="list-item">
           <h3 class="text-xl font-semibold">Complete Python Developer (2022)</h3>
-          <p class="text-base md:text-lg">Udemy | <a href="https://ude.my/UC-0313a2f1-ee0c-4c98-a918-257db24360ac" class="text-blue-600 hover:underline">Certificate</a></p>
+          <p class="text-base md:text-lg">Udemy | <a href="https://ude.my/UC-0313a2f1-ee0c-4c98-a918-257db24360ac"
+              class="text-blue-600 hover:underline">Certificate</a></p>
         </div>
         <div class="list-item">
           <h3 class="text-xl font-semibold">Data Analytics & Visualization (2022)</h3>
@@ -384,21 +588,25 @@
         </div>
         <div class="list-item">
           <h3 class="text-xl font-semibold">Python for Data Science (2022)</h3>
-          <p class="text-base md:text-lg">Udemy | <a href="https://ude.my/UC-87beb6f4-6d89-43be-9b5a-6ba2c6c4bf14" class="text-blue-600 hover:underline">Certificate</a></p>
+          <p class="text-base md:text-lg">Udemy | <a href="https://ude.my/UC-87beb6f4-6d89-43be-9b5a-6ba2c6c4bf14"
+              class="text-blue-600 hover:underline">Certificate</a></p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section (Footer) -->
-  <footer id="contact" class="w-full py-12 px-5 md:px-10 flex flex-col md:flex-row md:justify-between items-center md:items-start" role="contentinfo">
+  <footer id="contact"
+    class="w-full py-12 px-5 md:px-10 flex flex-col md:flex-row md:justify-between items-center md:items-start"
+    role="contentinfo">
     <div class="mb-8 md:mb-0">
       <h2 class="text-3xl md:text-4xl font-bold mb-6">Connect with Me</h2>
       <div class="text-base md:text-lg space-y-4">
         <p class="list-item">Anil Kumar Raigar</p>
         <p class="list-item"><a href="mailto:arragiar.96@gmail.com" class="contact-link">arragiar.96@gmail.com</a></p>
         <p class="list-item">+44 07391964497</p>
-        <p class="list-item"><a href="src/Anil_Kumar_Raigar_Data_Analyst_CV.pdf" class="cta-button">Download Resume</a></p>
+        <p class="list-item"><a href="src/Anil_Kumar_Raigar_Data_Analyst_CV.pdf" class="cta-button">Download Resume</a>
+        </p>
       </div>
     </div>
     <div>
@@ -406,16 +614,21 @@
       <div class="flex space-x-4">
         <a href="https://github.com/anilkrp" class="social-icon text-blue-600" aria-label="GitHub">
           <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2.04c-5.52 0-10 4.48-10 10 0 4.42 2.88 8.14 6.84 9.48.5.09.68-.22.68-.48v-1.7c-2.78.6-3.36-1.34-3.36-1.34-.46-1.16-1.12-1.47-1.12-1.47-.92-.62.07-.61.07-.61 1.02.07 1.55 1.05 1.55 1.05.91 1.55 2.38 1.1 2.96.84.09-.65.35-1.1.64-1.35-2.24-.25-4.6-1.12-4.6-4.98 0-1.1.39-2 1.03-2.7-.1-.25-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.03A9.58 9.58 0 0112 6.84c.85.004 1.71.12 2.52.36 1.9-1.3 2.74-1.03 2.74-1.03.55 1.39.2 2.42.1 2.67.64.7 1.03 1.6 1.03 2.7 0 3.87-2.37 4.73-4.62 4.98.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12.04c0-5.52-4.48-10-10-10z"/>
+            <path
+              d="M12 2.04c-5.52 0-10 4.48-10 10 0 4.42 2.88 8.14 6.84 9.48.5.09.68-.22.68-.48v-1.7c-2.78.6-3.36-1.34-3.36-1.34-.46-1.16-1.12-1.47-1.12-1.47-.92-.62.07-.61.07-.61 1.02.07 1.55 1.05 1.55 1.05.91 1.55 2.38 1.1 2.96.84.09-.65.35-1.1.64-1.35-2.24-.25-4.6-1.12-4.6-4.98 0-1.1.39-2 1.03-2.7-.1-.25-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.03A9.58 9.58 0 0112 6.84c.85.004 1.71.12 2.52.36 1.9-1.3 2.74-1.03 2.74-1.03.55 1.39.2 2.42.1 2.67.64.7 1.03 1.6 1.03 2.7 0 3.87-2.37 4.73-4.62 4.98.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12.04c0-5.52-4.48-10-10-10z" />
           </svg>
         </a>
         <a href="https://www.linkedin.com/in/anilkrr/" class="social-icon text-blue-600" aria-label="LinkedIn">
           <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm13.5 11.3h-3v-5.5c0-1.31-.47-2.2-1.65-2.2-.9 0-1.43.61-1.67 1.2-.09.23-.11.55-.11.87v5.63h-3s.04-10.13 0-11.2h3v1.58c.4-.62 1.11-1.5 2.7-1.5 1.97 0 3.45 1.29 3.45 4.06v7.06z"/>
+            <path
+              d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm13.5 11.3h-3v-5.5c0-1.31-.47-2.2-1.65-2.2-.9 0-1.43.61-1.67 1.2-.09.23-.11.55-.11.87v5.63h-3s.04-10.13 0-11.2h3v1.58c.4-.62 1.11-1.5 2.7-1.5 1.97 0 3.45 1.29 3.45 4.06v7.06z" />
           </svg>
         </a>
         <a href="https://www.kaggle.com/anilkumarraigar" class="social-icon text-blue-600" aria-label="Kaggle">
-          <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M304.2 501.5L158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.3 0 6-3z"/></svg>
+          <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path fill="currentColor"
+              d="M304.2 501.5L158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.3 0 6-3z" />
+          </svg>
         </a>
       </div>
     </div>
@@ -472,17 +685,21 @@
       });
     });
   </script>
-<style>
-  .hover-img {
-    display: block; /* Ensures consistent transform behavior */
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
-  }
+  <style>
+    .hover-img {
+      display: block;
+      /* Ensures consistent transform behavior */
+      transition: transform 0.3s ease;
+      /* Smooth transition for scaling */
+    }
 
-  .hover-img:hover {
-    transform: scale(1.0125); /* Enlarges ~4px (e.g., 320px to 324px, 384px to ~388px) */
-  }
-</style>
-</style>
+    .hover-img:hover {
+      transform: scale(1.0125);
+      /* Enlarges ~4px (e.g., 320px to 324px, 384px to ~388px) */
+    }
+  </style>
+  </style>
   </style>
 </body>
+
 </html>
